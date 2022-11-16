@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopUpDialog</title>
+</head>
+<style>
+    body {
+        background-color: blueviolet;
+    }
+    #btnShowDia {
+        padding: 15px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        background-color: white;
+        color: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+
+    #popUpDia {
+        width: 300px;
+        padding: 15px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        background-color: white;
+        color: black;
+        position: absolute;
+        cursor: pointer;
+        text-align: center;
+    }
+  
+
+    .tital {
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+    }
+    .desc {
+        color: gray;
+    }
+
+    #btnCloseDia {
+        width: 100%;
+        height: 45px;
+        background-color: black;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+    }
+
+</style>
+<body>
+
+    <button id="btnShowDia">Show Dialog</button>
+
+    <dialog  id="popUpDia">
+        <p class="tital"><b>Dialog</b> </p>
+        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, sequi repellat commodi numquam porro vel. Aliquam commodi distinctio eius? Possimus quae perferendis numquam hic dolor, commodi deleniti enim accusamus aspernatur.</p>
+        <button id="btnCloseDia">Close</button>
+    </dialog>
+    
+</body>
+
+<script>
+
+    const dialog = document.querySelector('#popUpDia');
+    const showButton = document.querySelector('#btnShowDia');
+    const CloseButton = document.querySelector('#btnCloseDia');
+
+    showButton.addEventListener('click' , ()=>{
+        dialog.showModal();
+
+    })
+
+    CloseButton.addEventListener('click' , ()=>{
+        dialog.close();
+    })
+
+</script>
+</html>
