@@ -2,11 +2,12 @@
 
 >Step One : Add button to your document.
 
-...<button id="btnShowDia">Show Dialog</button>...
+...gradle <button id="btnShowDia">Show Dialog</button>...
 
 >Step Two : Add css to button .
 
-...#btnShowDia {
+...gradle
+#btnShowDia {
         padding: 15px;
         border: none;
         outline: none;
@@ -23,7 +24,7 @@
 
 >Step Three : Add Dialog in document.
 
-... <dialog  id="popUpDia">
+...gradle <dialog  id="popUpDia">
         <p class="tital"><b>Dialog</b> </p>
         <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, sequi repellat commodi numquam porro vel. Aliquam commodi distinctio eius? Possimus quae perferendis numquam hic dolor, commodi deleniti enim accusamus aspernatur.</p>
         <button id="btnCloseDia">Close</button>
@@ -31,7 +32,7 @@
 
 >Strp Fore : Add CSS to dialog.
 
-... #popUpDia {
+...gradle #popUpDia {
         width: 300px;
         padding: 15px;
         border: none;
@@ -66,7 +67,7 @@
 
 >Step Five : Add JS to open and close dialog.
 
-...
+...gradle
     const dialog = document.querySelector('#popUpDia');
     const showButton = document.querySelector('#btnShowDia');
     const CloseButton = document.querySelector('#btnCloseDia');
